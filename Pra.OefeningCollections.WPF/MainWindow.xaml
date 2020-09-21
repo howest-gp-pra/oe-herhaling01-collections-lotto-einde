@@ -1,0 +1,45 @@
+﻿<Window x:Class="Pra.OefeningCollections.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pra.OefeningCollections.WPF"
+        mc:Ignorable="d"
+        Title="Oefening collections" Height="528.667" Width="800">
+    <Grid>
+        <Button x:Name="btnEigenNummers" Content="Stap 1 : genereer jouw cijfercode" HorizontalAlignment="Left" Height="47" Margin="18,34,0,0" VerticalAlignment="Top" Width="279" Click="BtnEigenNummers_Click"/>
+        <TextBox x:Name="txtGetal1" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="18,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <TextBox x:Name="txtGetal2" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="107,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <TextBox x:Name="txtGetal3" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="196,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <TextBox x:Name="txtGetal4" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="284,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13" RenderTransformOrigin="4.901,0.389"/>
+        <TextBox x:Name="txtGetal5" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="366,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <TextBox x:Name="txtGetal6" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="452,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <GroupBox Header="Configuratie" HorizontalAlignment="Left" Height="122" Margin="541,10,0,0" VerticalAlignment="Top" Width="241">
+            <Grid>
+                <ComboBox x:Name="cmbBallen" HorizontalAlignment="Left" Margin="108,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbBallen_SelectionChanged"/>
+                <Label Content="Aantal ballen :" HorizontalAlignment="Left" Height="27" Margin="3,12,0,0" VerticalAlignment="Top" Width="87" Grid.ColumnSpan="2"/>
+                <Label Content="Juiste volgorde :" HorizontalAlignment="Left" Height="27" Margin="3,44,0,0" VerticalAlignment="Top" Width="100"/>
+                <RadioButton x:Name="rdbJa" Content="Ja" HorizontalAlignment="Left" Margin="123,50,0,0" VerticalAlignment="Top" IsChecked="True" Checked="RdbJa_Checked"/>
+                <RadioButton x:Name="rdbNeen" Content="Neen" HorizontalAlignment="Left" Margin="172,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.044,0.479" Checked="RdbNeen_Checked"/>
+
+            </Grid>
+        </GroupBox>
+        <Button x:Name="btnWinnendeNummers" Content="Stap 2 : genereer de winnende cijfercode" HorizontalAlignment="Left" Height="47" Margin="18,151,0,0" VerticalAlignment="Top" Width="279" Click="BtnWinnendeNummers_Click" />
+        <TextBox x:Name="txtWinGetal1" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="18,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <TextBox x:Name="txtWinGetal2" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="107,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <TextBox x:Name="txtWinGetal3" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="196,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <TextBox x:Name="txtWinGetal4" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="284,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13" RenderTransformOrigin="4.901,0.389"/>
+        <TextBox x:Name="txtWinGetal5" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="366,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <TextBox x:Name="txtWinGetal6" HorizontalContentAlignment="Center" FontSize="14pt" HorizontalAlignment="Left" Height="34" Margin="452,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" IsEnabled="False" Text="13"/>
+        <GroupBox Header="Jouw winst" HorizontalAlignment="Left" Height="120" Margin="18,284,0,0" VerticalAlignment="Top" Width="498">
+            <Grid>
+                <Label Content="Aantal juiste cijfers : " HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="129"/>
+                <Label Content="Jouw winst : " HorizontalAlignment="Left" Height="28" Margin="10,43,0,0" VerticalAlignment="Top" Width="129"/>
+                <Label x:Name="lblJuisteCijfers" Content="-" HorizontalAlignment="Left" Height="28" Margin="139,10,0,0" VerticalAlignment="Top" Width="129"/>
+                <Label x:Name="lblPrijzenGeld" Content="-" HorizontalAlignment="Left" Height="28" Margin="139,43,0,0" VerticalAlignment="Top" Width="129"/>
+
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
